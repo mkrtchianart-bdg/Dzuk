@@ -15,7 +15,6 @@ function Header({ location = "Արփի լիճ, Շիրակ" }) {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Handle click outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {

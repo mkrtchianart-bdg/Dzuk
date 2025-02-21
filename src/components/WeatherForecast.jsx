@@ -15,7 +15,6 @@ function WeatherForecast() {
   const [tabIndex, setTabIndex] = useState(0);
   const navigate = useNavigate();
 
-  // Mock data structure for the UI
   const mockData = [
     { time: '2 PM', temp: '20°C', icon: PartCloud },
     { time: '3 PM', temp: '21°C', icon: Cloudy },
@@ -26,7 +25,6 @@ function WeatherForecast() {
 
   return (
     <div className="weather-forecast-container">
-      {/* Top row with weather menu */}
       <div className="weather-menu">
         <img 
           src={weatherMenu} 
@@ -36,7 +34,6 @@ function WeatherForecast() {
         />
       </div>
 
-      {/* Tabs */}
       <Box className="forecast-tabs">
         <Tabs 
           value={tabIndex} 
@@ -49,7 +46,6 @@ function WeatherForecast() {
         </Tabs>
       </Box>
 
-      {/* Forecast Cards */}
       <div className="forecast-grid">
         {mockData.map((item, index) => (
           <div className="forecast-card" key={index}>

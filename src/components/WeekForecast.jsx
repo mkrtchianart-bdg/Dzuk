@@ -7,7 +7,6 @@ import Rainy from '../../public/weathericons/Rainy.svg';
 import Thunder from '../../public/weathericons/Thunder.svg';
 
 const WeekForecast = () => {
-  // Mock data for the week forecast
   const forecastData = [
     { day: 'Երկուշաբթի', icon: Sunny, maxTemp: 18, minTemp: 8 },
     { day: 'Երեքշաբթի', icon: PartCloud, maxTemp: 16, minTemp: 7 },
