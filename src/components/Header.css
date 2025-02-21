@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #382915; /* Change to your preferred background color */
+  color: white;
+  z-index: 1000; /* Ensure it's on top */
+  width: 100vw; /* Make it full viewport width */
+  position: fixed; /* Fix it to the top */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  width: 100px; /* Set equal width for both sides */
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+  max-width: calc(100% - 200px); /* Account for both side widths */
+}
+
+.header-center h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.header-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.header-icon:hover {
+  opacity: 0.8;
+}
+
+.fish-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.fish-menu.open {
+  right: 0;
+}
+
+.fish-menu-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.fish-list {
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100% - 60px);
+}
+
+.fish-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.fish-icon {
+  width: 46px;
+  height: 30px;
+  margin-right: 10px;
+} 
+
+.fish-name {
+  color: #382915;
+  text-align: left;
+}

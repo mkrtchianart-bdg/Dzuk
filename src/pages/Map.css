@@ -1,0 +1,47 @@
+.map-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.map-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #E5E5E5;
+  z-index: 1000;
+  flex-shrink: 0;
+}
+
+.map-container {
+  flex-grow: 1;
+  position: relative;
+  height: calc(100vh - [header-height]); /* Replace [header-height] with your actual header height */
+  width: 100%;
+}
+
+.map-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.back-button {
+  position: absolute;
+  left: 1rem;
+}
+
+.map-title {
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  text-align: center;
+} 

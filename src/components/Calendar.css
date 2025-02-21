@@ -1,0 +1,103 @@
+.calendar-container {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weather-text {
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000;
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.temperature {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.temp-unit {
+  font-size: 0.8em;
+  margin-left: 2px;
+}
+
+.date-info {
+  text-align: right;
+  color: #000;
+}
+
+.month-text {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+  color: #000;
+}
+
+.month,
+.year {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.calendar-grid {
+  width: 100%;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.weekdays span {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  color: #000;
+}
+
+.days span {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-day {
+  background: linear-gradient(90deg, #3C6FD1 0%, #7CA9FF 100%);
+  color: white;
+}
+
+.prev-month,
+.next-month {
+  color: #999;
+}
+

@@ -1,0 +1,32 @@
+.fish-level-container {
+  background-color: #FFF;
+  width: 90%;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+.fish-level-title {
+  text-align: left;
+  color: #000;
+  font-weight: normal;
+  margin: 1.5rem auto 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.fish-icons {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+
+}
+
+.fish-icon {
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.3s ease;
+}
+
+.fish-score {
+  display: none;
+}

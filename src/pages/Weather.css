@@ -1,0 +1,66 @@
+.weather-page {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 80px;
+}
+
+/* This ensures all child components are centered */
+.weather-page > * {
+  width: 100%;
+}
+
+.weather-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #E5E5E5;
+  z-index: 1000;
+}
+
+.back-button,
+.search-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.back-button img,
+.search-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.weather-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: left;
+  font-weight:normal;
+  color: #000;
+}
+
+/* Add these new rules to position the buttons absolutely */
+.back-button {
+  position: absolute;
+  left: 1rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 1rem;
+}
